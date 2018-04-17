@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="loginADM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginADMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginADMResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admInResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="admInResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="admAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="admAllResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="admIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateADM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateADMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateADMResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admDel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="admDelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="admDelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginEscola">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="loginEscolaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginEscolaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertEscola">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertEscolaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insertEscolaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="escolaAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="escolaAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="escolaAllResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="escolaID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="escolaIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="escolaIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateEscola">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateEscolaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateEscolaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="escolaDel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="escolaDelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="escolaDelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="alunoIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="alunoInResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="alunoInResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="alunoAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="alunoAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="alunoAllResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="alunoID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="alunoIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="alunoIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateAluno">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateAlunoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateAlunoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="alunoDel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="alunoDelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="alunoDelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="turmaIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="turmaInResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="turmaInResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="turmaAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="turmaAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="turmaAllResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateTurma">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="turmaantes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateTurmaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateTurmaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="turmaDel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="turmaDelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="turmaDelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="responsavelIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="responsavelInResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="responsavelInResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="responsavelAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="responsavelAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="responsavelAllResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateResponsavel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateResponsavelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="updateResponsavelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="responsavelDel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="responsavelDelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="responsavelDelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="historicoIn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="historicoInResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="historicoInResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="historicoAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="historicoAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="historicoAllResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="historicoDel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="historicoDelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="historicoDelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="loginADMSoapIn">
+    <wsdl:part name="parameters" element="tns:loginADM" />
+  </wsdl:message>
+  <wsdl:message name="loginADMSoapOut">
+    <wsdl:part name="parameters" element="tns:loginADMResponse" />
+  </wsdl:message>
+  <wsdl:message name="admInSoapIn">
+    <wsdl:part name="parameters" element="tns:admIn" />
+  </wsdl:message>
+  <wsdl:message name="admInSoapOut">
+    <wsdl:part name="parameters" element="tns:admInResponse" />
+  </wsdl:message>
+  <wsdl:message name="admAllSoapIn">
+    <wsdl:part name="parameters" element="tns:admAll" />
+  </wsdl:message>
+  <wsdl:message name="admAllSoapOut">
+    <wsdl:part name="parameters" element="tns:admAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="admIDSoapIn">
+    <wsdl:part name="parameters" element="tns:admID" />
+  </wsdl:message>
+  <wsdl:message name="admIDSoapOut">
+    <wsdl:part name="parameters" element="tns:admIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateADMSoapIn">
+    <wsdl:part name="parameters" element="tns:updateADM" />
+  </wsdl:message>
+  <wsdl:message name="updateADMSoapOut">
+    <wsdl:part name="parameters" element="tns:updateADMResponse" />
+  </wsdl:message>
+  <wsdl:message name="admDelSoapIn">
+    <wsdl:part name="parameters" element="tns:admDel" />
+  </wsdl:message>
+  <wsdl:message name="admDelSoapOut">
+    <wsdl:part name="parameters" element="tns:admDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="loginEscolaSoapIn">
+    <wsdl:part name="parameters" element="tns:loginEscola" />
+  </wsdl:message>
+  <wsdl:message name="loginEscolaSoapOut">
+    <wsdl:part name="parameters" element="tns:loginEscolaResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertEscolaSoapIn">
+    <wsdl:part name="parameters" element="tns:insertEscola" />
+  </wsdl:message>
+  <wsdl:message name="insertEscolaSoapOut">
+    <wsdl:part name="parameters" element="tns:insertEscolaResponse" />
+  </wsdl:message>
+  <wsdl:message name="escolaAllSoapIn">
+    <wsdl:part name="parameters" element="tns:escolaAll" />
+  </wsdl:message>
+  <wsdl:message name="escolaAllSoapOut">
+    <wsdl:part name="parameters" element="tns:escolaAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="escolaIDSoapIn">
+    <wsdl:part name="parameters" element="tns:escolaID" />
+  </wsdl:message>
+  <wsdl:message name="escolaIDSoapOut">
+    <wsdl:part name="parameters" element="tns:escolaIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateEscolaSoapIn">
+    <wsdl:part name="parameters" element="tns:updateEscola" />
+  </wsdl:message>
+  <wsdl:message name="updateEscolaSoapOut">
+    <wsdl:part name="parameters" element="tns:updateEscolaResponse" />
+  </wsdl:message>
+  <wsdl:message name="escolaDelSoapIn">
+    <wsdl:part name="parameters" element="tns:escolaDel" />
+  </wsdl:message>
+  <wsdl:message name="escolaDelSoapOut">
+    <wsdl:part name="parameters" element="tns:escolaDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="alunoInSoapIn">
+    <wsdl:part name="parameters" element="tns:alunoIn" />
+  </wsdl:message>
+  <wsdl:message name="alunoInSoapOut">
+    <wsdl:part name="parameters" element="tns:alunoInResponse" />
+  </wsdl:message>
+  <wsdl:message name="alunoAllSoapIn">
+    <wsdl:part name="parameters" element="tns:alunoAll" />
+  </wsdl:message>
+  <wsdl:message name="alunoAllSoapOut">
+    <wsdl:part name="parameters" element="tns:alunoAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="alunoIDSoapIn">
+    <wsdl:part name="parameters" element="tns:alunoID" />
+  </wsdl:message>
+  <wsdl:message name="alunoIDSoapOut">
+    <wsdl:part name="parameters" element="tns:alunoIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateAlunoSoapIn">
+    <wsdl:part name="parameters" element="tns:updateAluno" />
+  </wsdl:message>
+  <wsdl:message name="updateAlunoSoapOut">
+    <wsdl:part name="parameters" element="tns:updateAlunoResponse" />
+  </wsdl:message>
+  <wsdl:message name="alunoDelSoapIn">
+    <wsdl:part name="parameters" element="tns:alunoDel" />
+  </wsdl:message>
+  <wsdl:message name="alunoDelSoapOut">
+    <wsdl:part name="parameters" element="tns:alunoDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="turmaInSoapIn">
+    <wsdl:part name="parameters" element="tns:turmaIn" />
+  </wsdl:message>
+  <wsdl:message name="turmaInSoapOut">
+    <wsdl:part name="parameters" element="tns:turmaInResponse" />
+  </wsdl:message>
+  <wsdl:message name="turmaAllSoapIn">
+    <wsdl:part name="parameters" element="tns:turmaAll" />
+  </wsdl:message>
+  <wsdl:message name="turmaAllSoapOut">
+    <wsdl:part name="parameters" element="tns:turmaAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateTurmaSoapIn">
+    <wsdl:part name="parameters" element="tns:updateTurma" />
+  </wsdl:message>
+  <wsdl:message name="updateTurmaSoapOut">
+    <wsdl:part name="parameters" element="tns:updateTurmaResponse" />
+  </wsdl:message>
+  <wsdl:message name="turmaDelSoapIn">
+    <wsdl:part name="parameters" element="tns:turmaDel" />
+  </wsdl:message>
+  <wsdl:message name="turmaDelSoapOut">
+    <wsdl:part name="parameters" element="tns:turmaDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="responsavelInSoapIn">
+    <wsdl:part name="parameters" element="tns:responsavelIn" />
+  </wsdl:message>
+  <wsdl:message name="responsavelInSoapOut">
+    <wsdl:part name="parameters" element="tns:responsavelInResponse" />
+  </wsdl:message>
+  <wsdl:message name="responsavelAllSoapIn">
+    <wsdl:part name="parameters" element="tns:responsavelAll" />
+  </wsdl:message>
+  <wsdl:message name="responsavelAllSoapOut">
+    <wsdl:part name="parameters" element="tns:responsavelAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateResponsavelSoapIn">
+    <wsdl:part name="parameters" element="tns:updateResponsavel" />
+  </wsdl:message>
+  <wsdl:message name="updateResponsavelSoapOut">
+    <wsdl:part name="parameters" element="tns:updateResponsavelResponse" />
+  </wsdl:message>
+  <wsdl:message name="responsavelDelSoapIn">
+    <wsdl:part name="parameters" element="tns:responsavelDel" />
+  </wsdl:message>
+  <wsdl:message name="responsavelDelSoapOut">
+    <wsdl:part name="parameters" element="tns:responsavelDelResponse" />
+  </wsdl:message>
+  <wsdl:message name="historicoInSoapIn">
+    <wsdl:part name="parameters" element="tns:historicoIn" />
+  </wsdl:message>
+  <wsdl:message name="historicoInSoapOut">
+    <wsdl:part name="parameters" element="tns:historicoInResponse" />
+  </wsdl:message>
+  <wsdl:message name="historicoAllSoapIn">
+    <wsdl:part name="parameters" element="tns:historicoAll" />
+  </wsdl:message>
+  <wsdl:message name="historicoAllSoapOut">
+    <wsdl:part name="parameters" element="tns:historicoAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="historicoDelSoapIn">
+    <wsdl:part name="parameters" element="tns:historicoDel" />
+  </wsdl:message>
+  <wsdl:message name="historicoDelSoapOut">
+    <wsdl:part name="parameters" element="tns:historicoDelResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSControlSoap">
+    <wsdl:operation name="loginADM">
+      <wsdl:input message="tns:loginADMSoapIn" />
+      <wsdl:output message="tns:loginADMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="admIn">
+      <wsdl:input message="tns:admInSoapIn" />
+      <wsdl:output message="tns:admInSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="admAll">
+      <wsdl:input message="tns:admAllSoapIn" />
+      <wsdl:output message="tns:admAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="admID">
+      <wsdl:input message="tns:admIDSoapIn" />
+      <wsdl:output message="tns:admIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateADM">
+      <wsdl:input message="tns:updateADMSoapIn" />
+      <wsdl:output message="tns:updateADMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="admDel">
+      <wsdl:input message="tns:admDelSoapIn" />
+      <wsdl:output message="tns:admDelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="loginEscola">
+      <wsdl:input message="tns:loginEscolaSoapIn" />
+      <wsdl:output message="tns:loginEscolaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertEscola">
+      <wsdl:input message="tns:insertEscolaSoapIn" />
+      <wsdl:output message="tns:insertEscolaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="escolaAll">
+      <wsdl:input message="tns:escolaAllSoapIn" />
+      <wsdl:output message="tns:escolaAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="escolaID">
+      <wsdl:input message="tns:escolaIDSoapIn" />
+      <wsdl:output message="tns:escolaIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateEscola">
+      <wsdl:input message="tns:updateEscolaSoapIn" />
+      <wsdl:output message="tns:updateEscolaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="escolaDel">
+      <wsdl:input message="tns:escolaDelSoapIn" />
+      <wsdl:output message="tns:escolaDelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="alunoIn">
+      <wsdl:input message="tns:alunoInSoapIn" />
+      <wsdl:output message="tns:alunoInSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="alunoAll">
+      <wsdl:input message="tns:alunoAllSoapIn" />
+      <wsdl:output message="tns:alunoAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="alunoID">
+      <wsdl:input message="tns:alunoIDSoapIn" />
+      <wsdl:output message="tns:alunoIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAluno">
+      <wsdl:input message="tns:updateAlunoSoapIn" />
+      <wsdl:output message="tns:updateAlunoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="alunoDel">
+      <wsdl:input message="tns:alunoDelSoapIn" />
+      <wsdl:output message="tns:alunoDelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="turmaIn">
+      <wsdl:input message="tns:turmaInSoapIn" />
+      <wsdl:output message="tns:turmaInSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="turmaAll">
+      <wsdl:input message="tns:turmaAllSoapIn" />
+      <wsdl:output message="tns:turmaAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTurma">
+      <wsdl:input message="tns:updateTurmaSoapIn" />
+      <wsdl:output message="tns:updateTurmaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="turmaDel">
+      <wsdl:input message="tns:turmaDelSoapIn" />
+      <wsdl:output message="tns:turmaDelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="responsavelIn">
+      <wsdl:input message="tns:responsavelInSoapIn" />
+      <wsdl:output message="tns:responsavelInSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="responsavelAll">
+      <wsdl:input message="tns:responsavelAllSoapIn" />
+      <wsdl:output message="tns:responsavelAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateResponsavel">
+      <wsdl:input message="tns:updateResponsavelSoapIn" />
+      <wsdl:output message="tns:updateResponsavelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="responsavelDel">
+      <wsdl:input message="tns:responsavelDelSoapIn" />
+      <wsdl:output message="tns:responsavelDelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="historicoIn">
+      <wsdl:input message="tns:historicoInSoapIn" />
+      <wsdl:output message="tns:historicoInSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="historicoAll">
+      <wsdl:input message="tns:historicoAllSoapIn" />
+      <wsdl:output message="tns:historicoAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="historicoDel">
+      <wsdl:input message="tns:historicoDelSoapIn" />
+      <wsdl:output message="tns:historicoDelSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSControlSoap" type="tns:WSControlSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="loginADM">
+      <soap:operation soapAction="http://tempuri.org/loginADM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admIn">
+      <soap:operation soapAction="http://tempuri.org/admIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admAll">
+      <soap:operation soapAction="http://tempuri.org/admAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admID">
+      <soap:operation soapAction="http://tempuri.org/admID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateADM">
+      <soap:operation soapAction="http://tempuri.org/updateADM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admDel">
+      <soap:operation soapAction="http://tempuri.org/admDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginEscola">
+      <soap:operation soapAction="http://tempuri.org/loginEscola" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertEscola">
+      <soap:operation soapAction="http://tempuri.org/insertEscola" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escolaAll">
+      <soap:operation soapAction="http://tempuri.org/escolaAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escolaID">
+      <soap:operation soapAction="http://tempuri.org/escolaID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEscola">
+      <soap:operation soapAction="http://tempuri.org/updateEscola" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escolaDel">
+      <soap:operation soapAction="http://tempuri.org/escolaDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alunoIn">
+      <soap:operation soapAction="http://tempuri.org/alunoIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alunoAll">
+      <soap:operation soapAction="http://tempuri.org/alunoAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alunoID">
+      <soap:operation soapAction="http://tempuri.org/alunoID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAluno">
+      <soap:operation soapAction="http://tempuri.org/updateAluno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alunoDel">
+      <soap:operation soapAction="http://tempuri.org/alunoDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="turmaIn">
+      <soap:operation soapAction="http://tempuri.org/turmaIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="turmaAll">
+      <soap:operation soapAction="http://tempuri.org/turmaAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTurma">
+      <soap:operation soapAction="http://tempuri.org/updateTurma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="turmaDel">
+      <soap:operation soapAction="http://tempuri.org/turmaDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="responsavelIn">
+      <soap:operation soapAction="http://tempuri.org/responsavelIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="responsavelAll">
+      <soap:operation soapAction="http://tempuri.org/responsavelAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateResponsavel">
+      <soap:operation soapAction="http://tempuri.org/updateResponsavel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="responsavelDel">
+      <soap:operation soapAction="http://tempuri.org/responsavelDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="historicoIn">
+      <soap:operation soapAction="http://tempuri.org/historicoIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="historicoAll">
+      <soap:operation soapAction="http://tempuri.org/historicoAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="historicoDel">
+      <soap:operation soapAction="http://tempuri.org/historicoDel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSControlSoap12" type="tns:WSControlSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="loginADM">
+      <soap12:operation soapAction="http://tempuri.org/loginADM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admIn">
+      <soap12:operation soapAction="http://tempuri.org/admIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admAll">
+      <soap12:operation soapAction="http://tempuri.org/admAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admID">
+      <soap12:operation soapAction="http://tempuri.org/admID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateADM">
+      <soap12:operation soapAction="http://tempuri.org/updateADM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="admDel">
+      <soap12:operation soapAction="http://tempuri.org/admDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginEscola">
+      <soap12:operation soapAction="http://tempuri.org/loginEscola" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertEscola">
+      <soap12:operation soapAction="http://tempuri.org/insertEscola" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escolaAll">
+      <soap12:operation soapAction="http://tempuri.org/escolaAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escolaID">
+      <soap12:operation soapAction="http://tempuri.org/escolaID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEscola">
+      <soap12:operation soapAction="http://tempuri.org/updateEscola" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escolaDel">
+      <soap12:operation soapAction="http://tempuri.org/escolaDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alunoIn">
+      <soap12:operation soapAction="http://tempuri.org/alunoIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alunoAll">
+      <soap12:operation soapAction="http://tempuri.org/alunoAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alunoID">
+      <soap12:operation soapAction="http://tempuri.org/alunoID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAluno">
+      <soap12:operation soapAction="http://tempuri.org/updateAluno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alunoDel">
+      <soap12:operation soapAction="http://tempuri.org/alunoDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="turmaIn">
+      <soap12:operation soapAction="http://tempuri.org/turmaIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="turmaAll">
+      <soap12:operation soapAction="http://tempuri.org/turmaAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTurma">
+      <soap12:operation soapAction="http://tempuri.org/updateTurma" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="turmaDel">
+      <soap12:operation soapAction="http://tempuri.org/turmaDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="responsavelIn">
+      <soap12:operation soapAction="http://tempuri.org/responsavelIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="responsavelAll">
+      <soap12:operation soapAction="http://tempuri.org/responsavelAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateResponsavel">
+      <soap12:operation soapAction="http://tempuri.org/updateResponsavel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="responsavelDel">
+      <soap12:operation soapAction="http://tempuri.org/responsavelDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="historicoIn">
+      <soap12:operation soapAction="http://tempuri.org/historicoIn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="historicoAll">
+      <soap12:operation soapAction="http://tempuri.org/historicoAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="historicoDel">
+      <soap12:operation soapAction="http://tempuri.org/historicoDel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSControl">
+    <wsdl:port name="WSControlSoap" binding="tns:WSControlSoap">
+      <soap:address location="http://localhost:3962/BackOfficeFBWS/WSControl.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSControlSoap12" binding="tns:WSControlSoap12">
+      <soap12:address location="http://localhost:3962/BackOfficeFBWS/WSControl.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

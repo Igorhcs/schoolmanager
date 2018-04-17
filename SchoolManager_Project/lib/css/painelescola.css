@@ -1,0 +1,93 @@
+﻿body {
+    margin:0;
+    padding:0;
+    background-image:url(../img/bg/fundoescola.gif);
+    background-repeat: no-repeat;
+
+}
+.container{
+   margin:0 auto;
+   width:100%;
+   min-height:400px;
+}
+.head{
+    float:left;
+    width:100%;
+    min-height:100px;
+    margin:5px;
+}
+.logo{
+	margin-top:17px;
+    margin-left:43px;
+    margin-bottom:15px;
+	min-height:55px;	
+	background-image: url(../img/bg/headescola.png);	
+	background-repeat:no-repeat;
+	/*background-size:1%;*/
+}
+@charset "utf-8";
+ul,
+li{
+    z-index:999;
+    text-align:center;
+
+}
+#menu{
+    background-image:url(../img/bg/menusm1000px.png);
+    margin:auto;
+    padding:0px;
+    height:59px;
+    width:1000px;
+    z-index:999;
+    text-align:center;
+    list-style:none;
+    /*margin:0px auto 0px auto;*/
+    /*padding:3px 3px 0px 3px;*/
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+    border:0px solid #002232;
+    -moz-box-shadow:inset 0px 0px 0px #edf9ff;
+    -webkit-box-shadow:inset 0px 0px 0px #edf9ff;
+    box-shadow:inset 0px 0px 0px #edf9ff
+
+}
+#menu li{
+    float:left;
+    display:block;
+    text-align:center;
+    position:relative;
+    padding:7px 5px 8px 5px;
+    /*margin-left:100px;*/
+    margin-top:14px;
+    border:none;
+    width:200px;
+    height:17px;
+}
+#menu li:hover{
+    background-color:#fff;
+    opacity:0.1;
+}
+#menu li a.spanr {
+    text-decoration: none;
+    color:transparent;
+    font-size:38px;
+}
+
+#menu #responsavel {
+    width:259px;
+    margin-left:25px;
+}
+#menu #turma {
+    width:211px;
+    margin-left:4px;
+}
+#menu #aluno{
+    width:220px;
+    margin-left:4px;    
+}
+#menu #relatorio{
+    width:208px;
+    margin-left:4px;
+}
+

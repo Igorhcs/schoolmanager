@@ -1,0 +1,63 @@
+﻿body {
+
+}
+#container3 {
+    background-image:url(../img/bg/relatorio.png);
+    background-repeat:no-repeat;
+    width:100%;
+    min-height:600px;
+    margin:65px 0px 0px 150px;
+}
+#content {
+    margin:0px;
+    width:85%;
+    min-height:346px
+}
+#content ul {
+    /*margin:52px 0px 0px 195px;old*/
+    margin:50px 0px 0px 0px;
+    list-style-type: none;
+    list-style-position: outside;
+    position:absolute;
+    width:485px;
+    min-height:190px;
+}
+
+#msg {
+    width:485px;
+    min-height:270px;
+    float:left;
+    margin-top:40px;
+    margin-left:610px;
+}
+.img {
+    margin-top:15px;
+    margin-left:260px;
+    background:url(../img/bg/botaorelatorio.png) no-repeat left;
+    width: 128px;
+    height: 29px;
+}
+
+li {
+    font-size:13px;
+    margin:58px 0px 18px 31px;
+    list-style:none;
+    text-decoration:none;
+    position:relative;
+}
+input
+{
+    width:370px;
+    height:18px;
+    background-color:transparent;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+}
+.lbmsg {
+    color: #FFF;
+    margin: 0px 0px 0px 730px;
+    width: 100%;
+    font-size: 24px;
+    float: left;
+    text-align: initial;
+}

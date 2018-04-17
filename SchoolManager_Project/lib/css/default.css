@@ -1,0 +1,414 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/12/2015, 19:10:29
+    Author     : Alexandre
+*/
+html{
+    margin:0;
+    padding:0;
+}
+/*  ESTILOS DE TIPOGRAFIA*/
+body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .required_notification {font-size: 11px;}
+
+.container{
+   margin:0 auto;
+   width:1000px;
+   min-height:400px;
+}
+.head{
+    float:left;
+    width:100%;
+    min-height:200px;
+}
+.content{
+    float:left;
+    margin-top:10px;
+    width:100%;
+    min-height:400px;
+}
+.mode{
+    float:left;
+    margin:20px auto;
+    padding:0;
+    width:100%;
+    min-height:273px;
+    border:2px #00C solid;
+}
+.mode_title{
+    float:left;
+    width:100%;
+    height:80px;
+    background-color: #CCC;
+    text-align:center;
+}
+.list_p{
+    float:left;
+    width:100%;
+    height:30px;
+    padding:0;
+    left:0;
+   
+}
+.mode_lp{
+    float:left;
+    left:0;
+    width:99%;
+    height:30px;
+    margin:5px 0px 0px 5px;
+    list-style:none;
+    text-align:center;
+    font-size:23px;
+}
+.mode_lp a{
+    text-decoration:none;
+    color:#000;
+}
+.mode_lp a:hover{   
+    color:#76776f;
+}
+.mode_lp a:active{    
+    color:#F005FF;
+}
+.logo{
+	margin: 10px auto;
+	min-height:200px;	
+	background-image: url(../img/bg/bannertop.jpg);	
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+.login_box{
+	background:#FFF;
+	width:380px;
+	min-height:350px;
+	margin:3% auto 0 auto;
+	border-radius:10px;
+	box-shadow:3px 3px 15px #000;
+	padding:0;
+	opacity:0.9;
+}
+.titulo{
+	padding-top: 10px;
+	padding-bottom:10px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	font-size:25px;
+	text-align:center;
+	color:#FF3;
+	border-top-left-radius:8px;
+	border-top-right-radius: 8px;
+	border-bottom:1px 0px 3px #000;
+	text-shadow:1px 1px 10px #000;
+							/**/
+	background:#272823;/*old browsers*/
+	background:-moz-linear-gradient(top, #272823 0%, #42443c 100%);/*FF3.6+*/
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #272823), 
+	color-stop(100%, #42443c)); /*Chrome, safari4+*/
+	background:webkit-linear-gradient(top, #272823 0%, #42443c 100%);/*Chrome10, safari5.1+*/
+	background:-o-linear-gradient(top, #272823 0%, #42443c 100%); /*Opera 11.10+*/
+	background:-ms-linear-gradient(top, #272823 0%, #42443c 100%); /*IE10+*/
+	background:linear-gradient (to bottom, #272823 0%, #42443c 100%); /*W3C*/
+	filter:progid:DXImageTransform.Microsoft.gradient(starColorstr='#272823', endColorstr='#42443c', GradientType=0);/*IE6-9*/
+						/**********************/
+}
+.box_inputs{
+	margin-top:7px;
+	padding:5px;
+    float:left;
+}
+.msg{
+    width:270px;
+    height:35px;
+    float:left;
+    margin-left:35px;
+    
+}
+.lb{
+    float:left;
+    width:270px;
+    height:20px;
+    text-align:left;
+    margin-left:35px;
+    margin-top:15px;
+}
+.login{
+	width:270px;
+	height:30px;
+	padding-left:5px;
+	border-radius:3px;
+	border:1px solid #76776f;
+	outline:none;
+	color:#272823;
+    margin-top:5px;
+    float:left;
+    margin-left:35px;
+
+}
+.login:focus{/*classe + evento*/
+	border:1px solid #00C;
+	box-shadow:0 00 3px #00C;
+}
+.btn{
+    float:left;
+	margin:25px auto auto 120px;
+	width:120px;
+	padding:5px;
+	border:1px solid #93662b;
+	border-radius:5px;
+	cursor:pointer; /*muda a cor ao passar o mouse*/
+	color:#FF3;
+	font-weight:bold;
+	text-shadow:1px 1px #502207;
+	box-shadow:1px 1px 15px #AFAEAB;
+	text-align:center;
+							/**/
+	background:#272823;/*old browsers*/
+	background:-moz-linear-gradient(top, #272823 0%, #42443c 100%);/*FF3.6+*/
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #272823), 
+	color-stop(100%, #42443c)); /*Chrome, safari4+*/
+	background:webkit-linear-gradient(top, #272823 0%, #42443c 100%);/*Chrome10, safari5.1+*/
+	background:-o-linear-gradient(top, #272823 0%, #42443c 100%); /*Opera 11.10+*/
+	background:-ms-linear-gradient(top, #272823 0%, #42443c 100%); /*IE10+*/
+	background:linear-gradient (to bottom, #272823 0%, #42443c 100%); /*W3C*/
+	filter:progid:DXImageTransform.Microsoft.gradient(starColorstr='#272823', endColorstr='#42443c', GradientType=0);/*IE6-9*/
+						/**********************/
+}
+/*ponto na frente se refere a classe*/
+.btn:hover{
+	background:#FF3;
+}
+.btn:focus{
+	outline:none;
+}
+.btn:active{/*Como o botão vai ficar depois que eu clicar*/
+	box-shadow:2px 2px 15px #AFAEAB;
+}
+
+.msgLogin{
+	text-align:center;
+	font-weight:bold;
+}
+.boasvindas{
+    float:left;
+    padding:0;
+    margin:2px auto;
+    text-align: center;
+    width:100%;
+    font-size: 24px;
+    
+}
+/*   ////////////////////////////////////////////////////////// CSS FORMulário */
+
+
+
+
+
+/*  ADICIONANDO ESTILO AO PLACEHOLDER*/
+
+:-moz-placeholder {
+    color: blue;
+}
+ 
+::-webkit-input-placeholder {
+    color: blue;
+}
+/*  REMOVENDO ESTILO DO FOCUS*/
+*:focus {outline: none;}
+
+/* ESTILOS DE LISTA*/
+.mode_list ul {
+    width: 900px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px auto;
+    padding: 0px;
+}
+.mode_list li{
+    padding:12px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+    list-style:none;
+}
+
+/*LEVE BORDA*/
+.mode_list li:first-child, .mode_list li:last-child {
+    border-bottom:1px solid #777;
+}
+
+/*CABECALHO DO FORM*/
+.mode_list h2 {
+    margin:0;
+    display: inline;
+}
+.required_notification {
+    color:#d45252; 
+    margin:5px 0 0 0; 
+    display:inline;
+    float:right;
+}
+
+
+.mode_list label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.mode_list input {
+    height:20px; 
+    width:220px; 
+    padding:5px 8px;
+}
+.mode_list textarea {padding:8px; width:300px;}
+
+/*ESTILOS EXTRAS*/
+.mode_list input, .mode_list textarea { 
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+.mode_list input:focus, .mode_list textarea:focus {
+    background: #fff; 
+    border:1px solid #555; 
+    box-shadow: 0 0 3px #aaa; 
+}
+/* Button Style */
+input.submit {
+    width:150px;
+    height:40px;
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+    
+}
+input.submit:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+input.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+     
+}
+/* ADICIONANDO INTERATIVIDADE */
+.mode_list input:focus, .mode_list textarea:focus { /* add this to the already existing style */
+    padding-right:70px;
+}
+
+/* EXPANSAO DOS CAMPOS COM CSS3 */
+.mode_list input, .mode_list textarea { /* add this to the already existing style */
+    -moz-transition: padding .25s; 
+    -webkit-transition: padding .25s; 
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+ /*ADICIONANDO INTERATIVIDADE AO ATRIBUTO REQUIRED*/
+   /* .mode_list input, .mode_list textarea {
+        padding-right:30px;
+    }
+       */
+    input:required, textarea:required {
+        background: #fff url(../icons/checkboxerro.png) no-repeat 98% center;
+    }
+    ::-webkit-validation-bubble-message {
+        padding: 1em;
+    }
+    
+    .mode_list input:focus:invalid, .mode_list textarea:focus:invalid { /* when a field is considered invalid by the browser */
+        background: #fff url(../icons/checkboxerro.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #d45252;
+        border-color: #b03535
+    }
+   .mode_list input:required:valid, .mode_list textarea:required:valid { /* when a field is considered valid by the browser */
+        background: #fff url(../icons/checkboxcerto.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #5cd053;
+        border-color: #28921f;
+    }
+    
+    .form_hint {
+        background: #d45252;
+        border-radius: 3px 3px 3px 3px;
+        color: white;
+        margin-left:8px;
+        padding: 1px 6px;
+        z-index: 999; /* hints stay above all other elements */
+        position: absolute; /* allows proper formatting if hint is two lines */
+        display: none;
+    }
+    
+    .form_hint::before {
+        content: "\25C0"; /* left point triangle in escaped unicode "\9650 9654 9660 */
+        color:#d45252;
+        position: absolute;
+        top:1px;
+        left:-6px;
+    }
+    .mode_listinput:focus + .form_hint {display: inline;}
+    .mode_list input:required:valid + .form_hint {background: #28921f;} /* change form hint color when valid */
+    .mode_list input:required:valid + .form_hint::before {color:#28921f;} /* change form hint arrow color when valid */
+
+    /*/////////////////////////////////////MENU*/
+    .menu{
+        float:left;
+        width:100%;
+        height:30px;
+        list-style:none;
+        text-decoration:none;
+        padding:0;
+        margin-bottom:10px;
+    }
+    .menu ul{
+        padding:0;
+        float:left;
+    }
+    .menuli{
+        float:left;
+        width:100px;
+        height:40px;
+        list-style:none;
+        text-decoration:none;
+        margin:0 auto auto 5px;
+        padding:0;
+    }
+    .menuli a:link{
+        text-decoration:none;
+        color:#ff0000;
+    }
+    .menuli a:hover{       
+        color:#00C;
+    }
+    .menulibt{
+        padding:0;
+        margin:0;
+    }

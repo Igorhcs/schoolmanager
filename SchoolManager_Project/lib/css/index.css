@@ -1,0 +1,12 @@
+﻿body{
+    margin:0px;
+    padding:0px;
+    background-color:#0f232d;
+}
+#containerindex{
+    margin:20px;
+    padding:0px;
+    height:100%;
+    width:100%;
+    background-color:#b6ff00;
+}

@@ -1,0 +1,88 @@
+﻿body {
+    margin:0;
+    padding:0;
+    /*background:#335373*/
+    background-image:url(../img/bg/Tela-de-login.gif);
+    background-repeat: no-repeat;
+    background-color:#1d2830;
+}
+#container{
+    margin:0;
+	padding:0;
+    width:100%;
+    height:100%;
+}
+#container #content {
+    margin:150px;
+    padding:0;
+    width:75%;
+    height:75%;
+}
+#container #login{
+    width: 600px;
+	height: 300px;
+    margin:300px 0px 300px 700px;
+}
+span {
+    margin:20px !important;
+    width:100%;
+    text-align:left;
+    font-size:20px;
+    color:#fff;
+    font-family: Pristina Regular;
+}
+input {
+    margin:0px 0px 20px 20px;
+    width:70%;
+    text-align:left;
+    font-size:20px;
+}
+.errorTB {
+    margin:20px auto;
+    width:80%;
+    text-align:left;
+    font-size:20px;
+    border:#FF0000 2px solid;       
+}
+.normalTB {
+    margin:20px auto;
+    width:80%;
+    text-align:left;
+    font-size:20px;
+    border:#000000 2px solid;       
+}
+.button {
+    width:24%;
+    margin:10px auto auto 400px;
+    text-align:center;
+    background-color:#b5b8ba;
+    font-family: 'Myriad Pro';
+    text-shadow:3px 3px 15px #0e242e;
+}
+.lbmsg {
+    color:#FFF;
+    margin:70px auto;
+    width:100%;
+    font-size:24px;
+    float:left;
+    text-align:center;
+}
+a{
+    margin: 40px;
+    font-family: 'Myriad Pro';
+    font-size: 20px;
+}
+#container #content #login a{
+	color:#FFF;
+	text-decoration:none;
+}
+#container #content #login a:link{
+	color:#FFF;
+	text-decoration:none;
+}
+#container #content #login a:hover{
+	color:#083;
+}
+#container #content #login a:active{
+	color:#875;
+}

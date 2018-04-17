@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BackOfficeFBWS", "C:\Users\759.34\Documents\Visual Studio 2012\WebSites\BackOfficeFBWS\", "{E26E55B6-44AD-4B83-9DD3-4782B23ABD4D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/BackOfficeFBWS"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\BackOfficeFBWS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BackOfficeFBWS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/BackOfficeFBWS"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\BackOfficeFBWS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\BackOfficeFBWS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50681"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SchoolManagerNew2", "C:\Users\759.34\Documents\Visual Studio 2012\WebSites\SchoolManagerNew2\", "{1491271F-6E2A-46C7-94EC-2980FEA613DB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/SchoolManagerNew2"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\SchoolManagerNew2\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SchoolManagerNew2\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SchoolManagerNew2"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\SchoolManagerNew2\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SchoolManagerNew2\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49317"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E26E55B6-44AD-4B83-9DD3-4782B23ABD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E26E55B6-44AD-4B83-9DD3-4782B23ABD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1491271F-6E2A-46C7-94EC-2980FEA613DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1491271F-6E2A-46C7-94EC-2980FEA613DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
